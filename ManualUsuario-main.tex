@@ -1,0 +1,573 @@
+\documentclass{GVT_CONAE_Class}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DATOS DEL DOCUMENTO A COMPLETAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Nombre del proyecto
+\Proyecto{Nombre del proyecto}
+% Título del documento
+\TituloDoc{Manual de usuario: Generación de metadatos}
+% Código del documento
+\CodigoDoc{GVT-AAA-PRO-DO-NUM}
+% Versión del documento
+\VersionDoc{v01}
+% Autores y posición de cada uno
+\AutorA{Ivanna Tropper}\PosicionAutorA{GVT - ACPP}
+\AutorB{}\PosicionAutorB{}
+\AutorC{}\PosicionAutorC{}
+\AutorD{}\PosicionAutorD{}
+% Revisores del documento, posición y fecha de revisión
+\RevisorA{}\PosicionRevisorA{}\FechaRevisorA{}
+\RevisorB{}\PosicionRevisorB{}\FechaRevisorB{}
+\RevisorC{}\PosicionRevisorC{}\FechaRevisorC{}
+\RevisorD{}\PosicionRevisorD{}\FechaRevisorD{}
+% Aprobadores del documento, posición y fecha de aprobación
+\AprobadorA{}\PosicionAprobadorA{}\FechaAprobadorA{}
+\AprobadorB{}\PosicionAprobadorB{}\FechaAprobadorB{}
+\AprobadorC{}\PosicionAprobadorC{}\FechaAprobadorC{}
+\AprobadorD{}\PosicionAprobadorD{}\FechaAprobadorD{}
+% Tipo de documento
+\TipoDocumento{Manual de Usuario}
+% Fecha de creación del documento
+\FechaDoc{ColoqueFecha}
+% Cambios del documento
+\VersionA{}\FechaA{}\CambioA{}
+\VersionB{}\FechaB{}\CambioB{}
+\VersionC{}\FechaC{}\CambioC{}
+\VersionD{}\FechaD{}\CambioD{}
+\VersionE{}\FechaE{}\CambioE{}
+\VersionF{}\FechaF{}\CambioF{}
+\VersionG{}\FechaG{}\CambioG{}
+% Documentos de referencia
+\CodReferenciaA{}\TituloReferenciaA{}
+\CodReferenciaB{}\TituloReferenciaB{}
+\CodReferenciaC{}\TituloReferenciaC{}
+\CodReferenciaD{}\TituloReferenciaD{}
+\CodReferenciaE{}\TituloReferenciaE{}
+\CodReferenciaF{}\TituloReferenciaF{}
+% Documentos aplicables
+\CodAplicableA{}\TituloAplicableA{Procedimiento de generación de metadatos de productos}
+\CodAplicableB{}\TituloAplicableB{}
+\CodAplicableC{}\TituloAplicableC{}
+\CodAplicableD{}\TituloAplicableD{}
+\CodAplicableE{}\TituloAplicableE{}
+\CodAplicableF{}\TituloAplicableF{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Secciones obligatorias en todos los documentos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------
+\section{Sobre el documento}
+%----------------------------------------------------------------------------
+
+    \subsection{Objetivos}
+    
+    \hl{Cambiar la el cls porque es viejo}
+    El presente documento tiene por objetivo definir que son los metadatos en forma general y particularmente cómo están comuestos los perfiles de metadatos vigentes en la \gls{conae}.
+
+    \subsection{Alcance}
+    Está destinado a todo agente de la \gls{gvt} que deba utilizar metadatos, ya sea porque tiene qyue generarlos o porque los utilizará como parte de los productos distribuidos de la \gls{conae}.
+    
+    
+    % Subsección de acrónimos
+    \printglossary[type=\acronymtype, numberedsection, title=Lista de acrónimos y abreviaturas]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fin de secciones obligatorias
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------
+\section{Introducción}
+%----------------------------------------------------------------------------
+Qué son los metadatos? Por qué son necesarios? 
+
+%----------------------------------------------------------------------------
+\section{Descripción de metadatos obligatorios}
+%----------------------------------------------------------------------------
+Los campos que componen los metadatos están clasificados en obligatorios y optativos. A continuación se describen los campos obligatorios.
+
+\subsection{ID único}
+Etiqueta:  <!--mdb:mi\_MI\_MD\_I-c--> 
+Valor ejemplo : nombre del archivo, sin extensión
+\begin{tabular}{c|c}
+    Elemento & Código de identificación único del producto \\
+    Definición & \\
+    Obligatoriedad (tipo de elemento) & \\
+    Multiplicidad & \\
+    Estructura XML (espacio nombre) & \\
+    Tipo de Dato & \\
+    Dominio & \\
+    Comentarios & \\
+    Ejemplo & \\
+\end{tabular}
+
+
+\subsection{Idioma (fijo)}
+Etiqueta: <!--mdb:dl\_lan-cod-->
+Valor fijo: "SPA"
+\begin{tabular}{c|c}
+    Elemento & Código de identificación único del producto \\
+    Definición & \\
+    Obligatoriedad (tipo de elemento) & \\
+    Multiplicidad & \\
+    Estructura XML (espacio nombre) & \\
+    Tipo de Dato & \\
+    Dominio & \\
+    Comentarios & \\
+    Ejemplo & \\
+\end{tabular}
+
+
+\subsection{Codificación (fijo)}
+Etiqueta <!--mdb:dl\_lan-cha-->
+Valor fijo: "utf8"
+\begin{tabular}{c|c}
+    Elemento & Código de identificación único del producto \\
+    Definición & \\
+    Obligatoriedad (tipo de elemento) & \\
+    Multiplicidad & \\
+    Estructura XML (espacio nombre) & \\
+    Tipo de Dato & \\
+    Dominio & \\
+    Comentarios & \\
+    Ejemplo & \\
+\end{tabular}
+
+
+\subsection{Nivel jerárquico}
+Tipo de dato
+Etiqueta <!--mdb:ms\_MD\_MS--> línea 28
+Codelist: MD\_ScopeCode
+Valor: MD\_ScopeCode\_dataset
+\begin{tabular}{c|c}
+    Elemento & Código de identificación único del producto \\
+    Definición & \\
+    Obligatoriedad (tipo de elemento) & \\
+    Multiplicidad & \\
+    Estructura XML (espacio nombre) & \\
+    Tipo de Dato & \\
+    Dominio & \\
+    Comentarios & \\
+    Ejemplo & \\
+\end{tabular}
+
+
+\subsection{Nombre del nivel jerárquico} 
+\subsubsection{Título de la serie}
+Etiqueta: <!--mdb:ii\_MD\_DI-ci\_c-s-CI\_s-n--> línea 139
+Texto libre
+Valor:  Serie de productos derivados - Producto diario de la columna troposférica de NO2, TROPOMI/Sentinel-5p
+\begin{tabular}{c|c}
+    Elemento & Código de identificación único del producto \\
+    Definición & \\
+    Obligatoriedad (tipo de elemento) & \\
+    Multiplicidad & \\
+    Estructura XML (espacio nombre) & \\
+    Tipo de Dato & \\
+    Dominio & \\
+    Comentarios & \\
+    Ejemplo & \\
+\end{tabular}
+
+
+\subsubsection{identificador corto del nivel jerárquico}
+Etiqueta: <!--mdb:ii\_MD\_DI-ci\_c-s-CI\_s-ii--> línea 142
+Texto libre
+Valor: TROPOMI-NO2diario
+\begin{tabular}{c|c}
+    Elemento & Código de identificación único del producto \\
+    Definición & \\
+    Obligatoriedad (tipo de elemento) & \\
+    Multiplicidad & \\
+    Estructura XML (espacio nombre) & \\
+    Tipo de Dato & \\
+    Dominio & \\
+    Comentarios & \\
+    Ejemplo & \\
+\end{tabular}
+
+
+\subsection{Punto de contacto del metadato  (fijo)}
+\subsubsection{Datos del publicador}
+Etiqueta
+Valor
+\subsubsection{Tipo de punto de contacto (fijo)}
+Codelist: CI\_RoleCode
+Etiqueta <!--mdb:ii\_MD\_DI-pc-CI\_R-r-1-->
+Valor: publisher
+
+\subsubsection{Nombre de la organización}
+Texto libre
+Etiqueta: <!--mdb:ii\_MD\_DI-poc-p-CI\_O-n1-->
+Valor: CONAE - Unidad de Sistemas de Información
+
+\subsubsection{Teléfono}
+Texto libre
+Etiqueta: <!--mdb:ii\_MD\_DI-poc-p-CI\_O-ci-CI\_C-p1-->
+Valor: "+541143310074 ext 5311"
+
+\subsubsection{Tipo de teléfono}
+Codelist: CI\_telephoneTypeCode
+Etiqueta:<!--mdb:ii\_MD\_DI-poc-p-CI\_O-ci-CI\_C-tp1-->
+Valor: voice
+\subsubsection{Dirección postal}
+Texto libre
+Etiqueta: <!--mdb:ii\_MD\_DI-poc-p-CI\_O-ci-CI\_C-a-CI\_A-dp1-->
+Valor: Av. Paseo Colón 751
+
+\subsubsection{Ciudad}
+Texto libre
+Etiqueta: <!--mdb:ii\_MD\_DI-poc-p-CI\_O-ci-CI\_C-a-CI\_A-c1-->
+Valor: CABA
+
+\subsubsection{Código postal}
+Texto libre
+Etiqueta: <!--mdb:ii\_MD\_DI-poc-p-CI\_O-ci-CI\_C-a-CI\_A-cp1-->
+Valor: 1063
+
+\subsubsection{País}
+Texto libre
+Etiqueta: <!--mdb:ii\_MD\_DI-poc-p-CI\_O-ci-CI\_C-a-CI\_A-p1-->
+Valor: Argentina
+
+\subsubsection{Dirección electrónica}
+Texto libre
+Etiqueta: <!--mdb:ii\_MD\_DI-poc-p-CI\_O-ci-CI\_C-a-CI\_A-em1-->
+Valor: fgarciaferreyra@conae.gov.ar / emergencias@conae.gov.ar 
+
+\subsubsection{Nombre individual}
+Texto libre
+Etiqueta: <!--mdb:ii\_MD\_DI-poc-p-CI\_O-i-CI\_I-n1-->
+Valor: Unidad de Emergencias y Alerta Temprana
+
+\subsubsection{Tipo puesto}
+Texto libre
+Etiqueta: <!--mdb:ii\_MD\_DI-poc-p-CI\_O-i-CI\_I-p1-->
+Valor: Técnico
+
+\begin{tabular}{c|c}
+    Elemento & Código de identificación único del producto \\
+    Definición & \\
+    Obligatoriedad (tipo de elemento) & \\
+    Multiplicidad & \\
+    Estructura XML (espacio nombre) & \\
+    Tipo de Dato & \\
+    Dominio & \\
+    Comentarios & \\
+    Ejemplo & \\
+\end{tabular}
+
+
+\subsection{Fecha de los metadatos}
+Etiqueta: <!--mdb:di\_MD\_D-df-MD\_F-fsc-CI\_C-d-CI\_D-d-->
+Valor: fecha de Publicación del metadato 
+(fecha de publicación de conae en el catálogo)
+
+\subsection{Nombre del perfil de metadato(fijo)}
+Etiqueta: <!--mdb:ms\_CI\_C-t-->	
+Valor fijo:  Perfil metadato CONAE - ISO 19115-3
+
+Etiqueta: <!--mdb:ms\_CI\_C-at-->	
+Valor fijo: Metadatos raster - 2018 - V1
+
+\subsection{Título}
+Etiqueta: <!--mdb:ii\_MD\_DI-ci\_c-t-->
+Valor ejemplo: es igual al atributo 1, definido por la IDE.
+
+\subsection{Resumen}
+Texto Libre
+Etiqueta : <!--mdb:ii\_MD\_DI-a--> línea 152
+Valor: El producto diario de NO2 presenta la densidad de la columna troposférica de dióxido de nitrógeno, derivada del producto NO2 L2 del sensor TROPOMI/Sentinel-5p (ESA) http://www.tropomi.eu. Se presenta en unidades de mol/m2 y con geometría WGS84 latitud/longitud, en formato GeoTIFF y para centros urbanos argentinos de interés.
+El producto de promedio semanal de NO2 presenta la densidad de la columna troposférica de dióxido de nitrógeno, derivada del producto NO2 L2 del sensor TROPOMI/Sentinel-5p (ESA) http://www.tropomi.eu. Se presenta en unidades de mol/m2 y con geometría WGS84 latitud/longitud, en formato GeoTIFF y para centros urbanos argentinos de interés. 
+El producto de desvío estándar semanal de NO2 presenta la densidad de la columna troposférica de dióxido de nitrógeno, derivada del producto NO2 L2 del sensor TROPOMI/Sentinel-5p (ESA) http://www.tropomi.eu. Se presenta en unidades de mol/m2 y con geometría WGS84 latitud/longitud, en formato GeoTIFF y para centros urbanos argentinos de interés.
+El producto de promedio mensual de NO2 presenta la densidad de la columna troposférica de dióxido de nitrógeno, derivada del producto NO2 L2 del sensor TROPOMI/Sentinel-5p (ESA) http://www.tropomi.eu. Se presenta en unidades de mol/m2 y con geometría WGS84 latitud/longitud, en formato GeoTIFF y para centros urbanos argentinos de interés.
+El producto de desvío estándar mensual de NO2 presenta la densidad de la columna troposférica de dióxido de nitrógeno, derivada del producto NO2 L2 del sensor TROPOMI/Sentinel-5p (ESA) http://www.tropomi.eu. Se presenta en unidades de mol/m2 y con geometría WGS84 latitud/longitud, en formato GeoTIFF y para centros urbanos argentinos de interés.
+
+\subsubsection{Crédito}
+Texto Libre
+Etiqueta: <!--mdb:ii\_MD\_DI-c--> línea 156
+Valor: CONAE - Unidad de Emergencias y Alerta Temprana, Subgerencia de Servicios al usuario, Gerencia de Vinculación Tecnológica. 
+
+\subsubsection{Status}
+Etiqueta: <!--mdb:ii\_MD\_DI-s--> línea 160
+Valor: onGoing
+Codelist: MD\_ProgressCode
+
+\subsection{Fecha de creación del producto}
+Formato fecha (formato especificado en el perfil)
+Etiqueta : <!--mdb:ii\_MD\_DI-ci\_c-d--> línea 129
+Valor: 2018-07-15T18:33:27
+
+\subsection{Frecuencia de mantenimiento}
+Etiqueta: <!--mdb:ii\_MD\_DI-rm-MD\_MI-f-->
+valor: AsNeeded
+Codelist: MD\_MaintenanceFrequencyCode
+
+\subsection{Tema}
+Etiqueta: <!--mdb:ii\_MD\_DI-tc--> línea 242
+Valor: environment
+Codelist: MD\_TopicCategoryCode
+
+\subsection{Palabras claves}
+\subsubsection{Tema}
+Texto libre
+Etiqueta: <!--mdb:ii\_MD\_DI-MD\_Kw-tema-->  línea 296
+Valor ejemplo: Dióxido de nitrógeno
+
+\subsubsection{Tema1}
+Etiqueta: <!--mdb:ii\_MD\_DI-MD\_Kw-tema1--> línea 307
+Valor ejemplo: Calidad del Aire
+
+\subsubsection{Lugar}
+Etiqueta:<!--mdb:ii\_MD\_DI-MD\_Kw-place--> línea 330
+Valor ejemplo: Ciudad X según nomenclatura de BAHRA http://www.bahra.gob.ar/
+
+\subsubsection{Plataforma}
+Etiqueta:<!--mdb:ii\_MD\_DI-MD\_Kw-plat-->  línea 341
+Valor ejemplo: Sentinel-5p
+
+\subsubsection{Temporal}
+Etiqueta:<!--mdb:ii\_MD\_DI-MD\_Kw-temp--> línea 318
+Valor ejemplo: a) actualización diaria, b) y c) actualización semanal, d) y e) actualización mensual
+
+(se pueden agregar tantas palabras claves se desea, siempre y cuando se respete la estructura de las etiquetas para especificar tipo)
+repetir esta estructura:
+<mri:descriptiveKeywords>
+	<mri:MD\_Keywords>
+		<mri:keyword>
+			<gco:CharacterString><!--mdb:ii\_MD\_DI-MD\_Kw-tema--></gco:CharacterString>
+		</mri:keyword>
+		<mri:type>
+			<mri:MD\_KeywordTypeCode codeListValue="theme" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/codelist/ML\_gmxCodelists.xml#MD\_KeywordTypeCode"/>
+		</mri:type>
+	</mri:MD\_Keywords>
+</mri:descriptiveKeywords>
+
+\subsection{Restricciones}
+\subsubsection{Legal}
+Etiqueta: <!--mdb:ii\_MD\_LC-ac-->
+Valor fijo: copyright
+
+\subsubsection{Uso}
+Etiqueta: <!--mdb:ii\_MD\_LC-uc-->
+Valor fijo: licenceUnrestricted
+
+\subsubsection{Otras restricciones o forma de citar el producto}
+Etiqueta: <!--mdb:ii\_MD\_LC-oc--> línea 360
+Texto libre
+Valor ejemplo: La descarga y/o uso de cualquiera de estos productos SAOCOM de Nivel 2 y Superior SAOCOM implica por consiguiente la aceptación de los presentes Términos y Condiciones de Uso y el reconocimiento y respeto de los derechos de Propiedad Intelectual y de Derecho de Autor de los Productos. Se deberá indicar la siguiente leyenda “Producto SAOCOM® - ©CONAE - año de adquisición. Todos los derechos reservados” en todas las publicaciones, resultados, productos derivados y demás usos que los usuarios les den a dichos Productos.
+
+\subsection{Tipo de representación espacial}
+Etiqueta: <!--mdb:ii\_MD\_DI-srt--> línea 221
+Codelis: MD\_SpatialRepresentationTypeCode
+Valor fijo: GRID
+
+\subsection{Punto de contacto del creador del recurso}
+Etiqueta: <!--mdb:c\_CI\_R-r-->
+Codelist: CI\_RoleCode
+Valor fijo: pointOfContact
+
+Etiqueta: <!--mdb:c\_CI\_R-p-CI\_O-n-->
+Texto libre
+Valor fijo: CONAE - Atencion al Usuario
+
+etiqueta: <!--mdb:c\_CI\_R-p-CI\_O-ci-CI\_C-a-CI\_A-dp-->
+Texto libre
+Valor fijo (direccion postal) : Paseo Colon 751
+
+etiqueta: <!--mdb:c\_CI\_R-p-CI\_O-ci-CI\_C-a-CI\_A-c-->
+Texto libre
+Valor fijo (ciudad): CABA
+
+etiqueta:<!--mdb:c\_CI\_R-p-CI\_O-ci-CI\_C-a-CI\_A-pc-->
+Texto libre
+Valor fijo (codigo postal): C1063ACH
+
+etiqueta: <!--mdb:c\_CI\_R-p-CI\_O-ci-CI\_C-a-CI\_A-p-->
+Texto libre
+Valor fijo (País): Argentina
+
+etiqueta: <!--mdb:c\_CI\_R-p-CI\_O-ci-CI\_C-a-CI\_A-em-->
+Texto libre
+Valor fijo (correo): atencion.usuario@conae.gov.ar
+
+Si se quiere agregar otro punto de contacto hay que repetir la estructura del etiquetas. 
+
+\subsection{Escala espacial del dato}
+\subsubsection{Escala (Resolución espacial)}
+Etiqueta: <!--mdb:ii\_MD\_DI-sr-es-MD\_RF-d--> línea 227
+Tipo de dato: Integer
+Valor ejemplo: 250000
+
+\subsubsection{Escala de trabajo}
+Etiqueta: <!--mdb:ii\_MD\_DI-sr-lod--> línea 236
+Texto libre
+Valor ejemplo: Escala de trabajo aproximada 1:250000, lo que equivale a una resolución de pixel de 62.5m.
+
+Fórmula para el cálculo de la escala de trabajo y tamaño de píxel
+$Tamaño de celda = Escala * 0.0254 / 96
+Escala = Tamaño de celda * 96 / 0.0254
+Escala = (7x3,5 km2) * 96 / 0.0254 = 92598,42519685 => 1:100.000 ?$
+
+\subsection{Extensión geográfica}
+\subsubsection{Coordenada extrema oeste}
+Etiqueta: <!--mdb:ii\_MD\_DI-e-E\_EX-ge-WBL--> línea 249
+Decimales
+Valor : UL
+
+\subsubsection{Coordenada extrema este}
+Etiqueta: <!--mdb:ii\_MD\_DI-e-E\_EX-ge-EBL--> línea 252
+Decimales
+Valor: UR
+
+\subsubsection{Coordenada extrema sur}
+Etiqueta: <!--mdb:ii\_MD\_DI-e-E\_EX-ge-SBL--> línea 255
+Decimales
+Valor: LR
+
+\subsubsection{Coordenada extrema norte}
+Etiqueta: <!--mdb:ii\_MD\_DI-e-E\_EX-ge-NBL--> línea 258
+Decimales
+Valor: LL
+
+\subsection{Sistema de referencia (fijo)}
+Etiqueta: <!--mdb:rsi\_MD\_RS-md\_i-t--> 
+Valor ejemplo: Sistema Geográfico Mundial
+
+Etiqueta: <!--mdb:rsi\_MD\_RS-md\_i-c-->  
+Valor ejemplo: EPSG:4326(WGS84)
+
+\subsection{Formato de distribución del recurso(fijo)}
+Etiqueta: <!--mdb:di\_MD\_D-df-MD\_F-fsc-CI\_C-t-->  
+Valor ejemplo: Geotiff
+
+\subsection{Nombre del enlace}
+Etiqueta: <!--mdb:di\_MD\_D-to-MD\_DTO-ol-CI\_OR-n-->
+Valor fijo: Recurso para Descargar
+
+
+
+
+%----------------------------------------------------------------------------
+\section{Instalación} % Si corresponde
+%----------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------
+\section{Descripción de las herramientas paso a paso}
+%----------------------------------------------------------------------------
+
+
+
+
+
+%*************************************************************************************
+%% Referencias -- Si no hay referencias, comentar las siguientes líneas
+%*************************************************************************************
+\addcontentsline{toc}{section}{Referencias} % Agrego la sección referencias al índice
+\bibliographystyle{ieeetr}  % Formato de las referencias: IEEE
+\bibliography{referencias}  % Archivo con la bibliografía
+
+
+%*************************************************************************************
+% A partir de la siguiente línea todas las secciones que se coloquen serán anexos
+%*************************************************************************************
+\newpage % Salto de página
+\appendix
+%********************
+
+
+\section{Descripción de los campos presentes en los metadatos} \label{AP:descrcampos}
+
+\begin{landscape}
+ \begin{longtable}[c]{| p{1.5cm} | p{4cm} | p{6cm} | p{4cm}| p{6cm} |}
+ \caption{Long table caption.\label{long}}\\
+
+ \hline
+ \multicolumn{5}{| c |}{Begin of Table}\\
+ \hline
+ L\'inea de referencia & Nombre del campo & Etiqueta & Definici\'on & Ejemplo\\
+ \hline
+ \endfirsthead
+
+ \hline
+ \multicolumn{5}{|c|}{Continuation of Table \ref{long}}\\
+ \hline
+ L\'inea de referencia & Nombre del campo & Etiqueta & Definici\'on & Ejemplo\\
+ \hline
+ \endhead
+
+ \hline
+ \endfoot
+
+ \hline
+ \multicolumn{5}{| c |}{End of Table}\\
+ \hline\hline
+ \endlastfoot
+ 
+  6 & ID unico (1) & <!--mdb:mi\_MI\_MD\_I-c--> & Referencia inequívoca de un recurso en contexto dado & 630ef5c7-8301-4805-9602-4e93a3c5516e \\
+ 28 & Nivel jerárquico (4) & <!--mdb:ms\_MD\_MS--> & Tipo de dato & Codelist: MD\_ScopeCode \hl{sin par en tabla} \\
+ 35 & Punto de contacto del creador del recurso (17.1) \hl{Tipo} & <!--mdb:c\_CI\_R-r--> & Identificación y manera de comunicarse con, persona y organización asociada con la generación del recurso & \hl{agregar}\\
+% % %    40 & Nombre de la organización (17.2) & <!--mdb:c\_CI_R-p-CI\_O-n--> & \\
+% % %    47 & Dirección postal (17.3) & <!--mdb:c_CI_R-p-CI_O-ci-CI_C-a-CI_A-dp--> & \\
+% % %    50 & Ciudad (17.4) & <!--mdb:c_CI_R-p-CI_O-ci-CI_C-a-CI_A-c--> & \\
+% % %    53 & Código postal (17.5) & <!--mdb:c_CI_R-p-CI_O-ci-CI_C-a-CI_A-pc--> & \\
+% % %    56 & País (17.5) & <!--mdb:c_CI_R-p-CI_O-ci-CI_C-a-CI_A-p--> & \\
+% % %    59 & Email (17.6)& <!--mdb:c_CI_R-p-CI_O-ci-CI_C-a-CI_A-em--> & \\
+% % %    72 & Fecha de creación del metadato (No está)& <!--mdb:di\_CI\_D-d-dt-c-->& \\
+124 & Título (9) & <!--mdb:ii\_MD\_DI-ci\_c-t--> & Nombre por el que se conoce formalmente el recurso (capa o archivo digital), asignado por el autor u organismo responsable (creadores) & \hl{agregar}\\
+129 & Fecha de referencia (11) & <!--mdb:ii\_MD\_DI-ci\_c-d--> & Fecha de referencia del recurso & \hl{agregar}\\
+132 & Tipo de fecha de referencia & \hl{agregar} & Tipo de fecha de referencia del recurso & Codelist: CI\_DateTypeCode\\
+
+139 & Nombre del nivel jerárquico (5.1) & <!--mdb:ii\_MD\_DI-ci\_c-s-CI\_s-n--> & Título de la serie & Serie de productos derivados - Índice de Vegetación obtenido con Radar \hl{sin par en tabla}\\
+142 & Identificador corto del niver jerárquino (5.2) & <!--mdb:ii\_MD\_DI-ci\_c-s-CI\_s-ii--> & Título corto de la serie & SAR-IRV \hl{sin par en tabla}\\
+
+% % %    145 & Ubicación del catálogo de la serie (no está) & <!--mdb:ii\_MD\_DI-ci\_c-s-CI\_s-p--> & \\
+152 & Resumen (10.1) & <!--mdb:ii\_MD\_DI-a--> & Relato sintético del contenido del recurso, complementario a la DESCRIPCIÓN. El mismo nos permite una revisión rápida del recurso asociado al metadato & \hl{texto libre}\\
+
+156 & Crédito (10.2) & <!--mdb:ii\_MD\_DI-c--> & & \hl{sin par en tabla} \\
+160 & Status (10.3) & !--mdb:ii\_MD\_DI-s--> & & \hl{sin par en tabla} \\
+% % %    170 & Datos del Publicador (DP)Nombre de la organización \hl{tipo} & <!--mdb:ii_MD_DI-poc-p-CI_O-n1--> & \\
+% % %    177 & DP telefono & <!--mdb:ii_MD_DI-poc-p-CI_O-ci-CI_C-p1-->
+% % %    187 & DP Dirección postal & <!--mdb:ii_MD_DI-poc-p-CI_O-ci-CI_C-a-CI_A-dp1-->
+% % %    190 & DP Ciudad & <!--mdb:ii_MD_DI-poc-p-CI_O-ci-CI_C-a-CI_A-c1-->
+% % %    193 & DP Código postal & <!--mdb:ii_MD_DI-poc-p-CI_O-ci-CI_C-a-CI_A-cp1-->
+% % %    196 & DP País & <!--mdb:ii_MD_DI-poc-p-CI_O-ci-CI_C-a-CI_A-p1-->
+% % %    199 & DP Email & <!--mdb:ii_MD_DI-poc-p-CI_O-ci-CI_C-a-CI_A-em1-->
+% % %    208 & DP Nombre individual & <!--mdb:ii_MD_DI-poc-p-CI_O-i-CI_I-n1-->
+% % %    211 & DP Tipo puesto & <!--mdb:ii_MD_DI-poc-p-CI_O-i-CI_I-p1-->
+
+
+221 & Tipo de representación espacial (16) & <!--mdb:ii\_MD\_DI-srt--> & & grid \hl{sin par en tabla}\\
+228 & Escala (Resolución espacial) (18.1) & <!--mdb:ii\_MD\_DI-sr-es-MD\_RF-d--> & \\
+237 & Escala de trabajo (18.2) & <!--mdb:ii\_MD\_DI-sr-lod--> & \\
+242 & Tema (13) & <!--mdb:ii\_MD\_DI-tc--> & \\
+250 & Extensión geográfica: UL (19.1) & <!--mdb:ii\_MD\_DI-e-E\_EX-ge-WBL--> & \\
+253 & Extensión geográfica: UR (19.2) & <!--mdb:ii\_MD\_DI-e-E\_EX-ge-EBL--> & \\
+256 & Extensión geográfica: LR (19.3) & <!--mdb:ii\_MD\_DI-e-E\_EX-ge-SBL--> & \\
+259 & Extensión geográfica: LL (19.4) & <!--mdb:ii\_MD\_DI-e-E\_EX-ge-NBL--> & \\
+268 & Frecuencia de mantenimiento (12) & <!--mdb:ii\_MD\_DI-rm-MD\_MI-f--> & \\
+% % %    276 & Quicklook & <!--mdb:ii\_MD\_DI-go-MD\_BG-fn-a--> & \\
+% % %    286 & Quicklook 2 & !--mdb:ii\_MD\_DI-go-MD\_BG-fn-b--> & \\
+296 & Tema (14.1) & <!--mdb:ii\_MD\_DI-MD\_Kw-tema--> & \\
+307 & Tema 1 (14.2) & <!--mdb:ii\_MD\_DI-MD\_Kw-tema1--> & \\
+318 & Temporal (14.5) & <!--mdb:ii\_MD\_DI-MD\_Kw-temp--> & \\
+330 & Lugar (14.3) & <!--mdb:ii\_MD\_DI-MD\_Kw-place--> & \\
+341 & Plataforma (14.4) & <!--mdb:ii\_MD\_DI-MD\_Kw-plat--> & \\
+360 & Otras restricciones o forma de citar el producto (15.3) & <!--mdb:ii\_MD\_LC-oc--> & \\
+% % %    391 & Link del catálogo & <!--mdb:ci\_MD\_FCD-fcc-CI\_C-or-CI\_OR-l--> & \\
+% % %    394 & Protocolo del link del catálogo & <!--mdb:ci\_MD\_FCD-fcc-CI\_C-or-CI\_OR-p--> & \\
+% % %    397 & Nombre de tipo de recurso & <!--mdb:ci\_MD\_FCD-fcc-CI\_C-or-CI\_OR-n--> & \\
+% % %    400 & Descripción del tipo de catálogo & <!--mdb:ci\_MD\_FCD-fcc-CI\_C-or-CI\_OR-d--> & \\
+425 & Fecha de los metadatos (7) & <!--mdb:di\_MD\_D-df-MD\_F-fsc-CI\_C-d-CI\_D-d--> & \\
+% % %    442 & Link de descarga & <!--mdb:di\_MD\_D-to-MD\_DTO-ol-CI\_OR-l--> & \\
+% % %    446 & Protocolo de descarga & <!--mdb:di\_MD\_D-to-MD\_DTO-ol-CI\_OR-p--> & \\
+% % %    449 & Tipo de descarga & <!--mdb:di_MD_D-to-MD_DTO-ol-CI_OR-n--> & \\
+% % %    453 & Descripción de la descarga & <!--mdb:di\_MD\_D-to-MD\_DTO-ol-CI\_OR-d--> & \\
+ 
+\end{longtable}
+\end{landscape}
+
+\end{document}

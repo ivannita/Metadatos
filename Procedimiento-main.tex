@@ -1,0 +1,132 @@
+\documentclass{GVT_CONAE_Class}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DATOS DEL DOCUMENTO A COMPLETAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Nombre del proyecto
+\Proyecto{Perfil de metadatos}
+% Título del documento
+\TituloDoc{Procedimiento (?) de generación de metadatos de productos}
+% Código del documento
+\CodigoDoc{GVT-AAA-PRO-DO-NUM}
+% Versión del documento
+\VersionDoc{v01}
+% Autores y posición de cada uno
+\AutorA{Ivanna Tropper}\PosicionAutorA{GVT - ACPP}
+\AutorB{}\PosicionAutorB{}
+\AutorC{}\PosicionAutorC{}
+\AutorD{}\PosicionAutorD{}
+% Revisores del documento, posición y fecha de revisión
+\RevisorA{}\PosicionRevisorA{}\FechaRevisorA{}
+\RevisorB{}\PosicionRevisorB{}\FechaRevisorB{}
+\RevisorC{}\PosicionRevisorC{}\FechaRevisorC{}
+\RevisorD{}\PosicionRevisorD{}\FechaRevisorD{}
+% Aprobadores del documento, posición y fecha de aprobación
+\AprobadorA{}\PosicionAprobadorA{}\FechaAprobadorA{}
+\AprobadorB{}\PosicionAprobadorB{}\FechaAprobadorB{}
+\AprobadorC{}\PosicionAprobadorC{}\FechaAprobadorC{}
+\AprobadorD{}\PosicionAprobadorD{}\FechaAprobadorD{}
+% Tipo de documento
+\TipoDocumento{Procedimiento}
+% Fecha de creación del documento
+\FechaDoc{ColoqueFecha}
+% Cambios del documento
+\VersionA{}\FechaA{}\CambioA{}
+\VersionB{}\FechaB{}\CambioB{}
+\VersionC{}\FechaC{}\CambioC{}
+\VersionD{}\FechaD{}\CambioD{}
+\VersionE{}\FechaE{}\CambioE{}
+\VersionF{}\FechaF{}\CambioF{}
+\VersionG{}\FechaG{}\CambioG{}
+% Documentos de referencia
+\CodReferenciaA{}\TituloReferenciaA{Manual de usuario: Generación de metadatos de productos}
+\CodReferenciaB{}\TituloReferenciaB{}
+\CodReferenciaC{}\TituloReferenciaC{}
+\CodReferenciaD{}\TituloReferenciaD{}
+\CodReferenciaE{}\TituloReferenciaE{}
+\CodReferenciaF{}\TituloReferenciaF{}
+% Documentos aplicables
+\CodAplicableA{}\TituloAplicableA{}
+\CodAplicableB{}\TituloAplicableB{}
+\CodAplicableC{}\TituloAplicableC{}
+\CodAplicableD{}\TituloAplicableD{}
+\CodAplicableE{}\TituloAplicableE{}
+\CodAplicableF{}\TituloAplicableF{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Secciones obligatorias en todos los documentos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------
+\section{Sobre el documento}
+%----------------------------------------------------------------------------
+
+    \subsection{Objetivos}
+    
+    El objetivo del presente documento es indicar a los generadores de productos satelitales las metodologías asociadas a la generación de los metadatos de estos productos.
+
+    \subsection{Alcance}
+    Está destinado al personal de la \gls{gvt} y es extensivo a todo aquel generador de productos que deba incluir los metadatos en el paquete de datos del producto generado.
+    
+    % Subsección de acrónimos
+    \printglossary[type=\acronymtype, numberedsection, title=Lista de acrónimos y abreviaturas]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fin de secciones obligatorias
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%-------------------------------------------------------------
+\section{Introducción}
+%------------------------------------------------------------- 
+
+Qué con los metadatos? Por qué son obligatorios? 
+
+%-------------------------------------------------------------
+\section{Descripción del procedimiento}
+%------------------------------------------------------------- 
+
+\begin{enumerate}
+    \item Definir los contenidos de los campos a completar (en anexo \ref{AP:descrcampos} se describen los campos)
+    \item Buscar la etiqueta del campo a completar en el archivo xml.
+    \item Reemplazar la etiqueta con el contenido deseado.
+    \item Repetir los pasos 2 y 3 para cada campo solicitado.
+\end{enumerate}
+
+
+
+
+%-------------------------------------------------------------
+\section{Roles y responsabilidades}
+%------------------------------------------------------------- 
+
+%-------------------------------------------------------------
+\section{Secuencia de tareas}
+%------------------------------------------------------------- 
+
+
+
+%-------------------------------------------------------------
+\section{Modelo de listas de verificación}
+%------------------------------------------------------------- 
+
+
+
+%*************************************************************************************
+%% Referencias -- Si no hay referencias, comentar las siguientes líneas
+%*************************************************************************************
+\addcontentsline{toc}{section}{Referencias} % Agrego la sección referencias al índice
+\bibliographystyle{ieeetr}  % Formato de las referencias: IEEE
+\bibliography{referencias}  % Archivo con la bibliografía
+
+
+%*************************************************************************************
+% A partir de la siguiente línea todas las secciones que se coloquen serán anexos
+%*************************************************************************************
+\newpage % Salto de página
+\appendix
+%********************
+
+
+\end{document}

@@ -1,0 +1,262 @@
+\documentclass{GVT_CONAE_Class}
+
+% Nombre del proyecto
+\Proyecto{Creación de templates en \LaTeX{} para la GVT}
+% Título del documento
+\TituloDoc{Template ejemplo de documento de \LaTeX{} para la Gerencia de Vinculación Tecnológica}
+% Código del documento
+\CodigoDoc{GVT-AAA-PRO-DO-NUM}
+% Versión del documento
+\VersionDoc{1.0}
+% Autores y posición de cada uno
+\AutorA{Leandro F. Rocco}\PosicionAutorA{ACP - GVT}
+\AutorB{Ivanna Tropper}\PosicionAutorB{ACP - GVT}
+\AutorC{}\PosicionAutorC{}
+\AutorD{}\PosicionAutorD{}
+% Revisores del documento, posición y fecha de revisión
+\RevisorA{}\PosicionRevisorA{}\FechaRevisorA{}
+\RevisorB{}\PosicionRevisorB{}\FechaRevisorB{}
+\RevisorC{}\PosicionRevisorC{}\FechaRevisorC{}
+\RevisorD{}\PosicionRevisorD{}\FechaRevisorD{}
+% Aprobadores del documento, posición y fecha de aprobación
+\AprobadorA{}\PosicionAprobadorA{}\FechaAprobadorA{}
+\AprobadorB{}\PosicionAprobadorB{}\FechaAprobadorB{}
+\AprobadorC{}\PosicionAprobadorC{}\FechaAprobadorC{}
+\AprobadorD{}\PosicionAprobadorD{}\FechaAprobadorD{}
+% Tipo de documento
+\TipoDocumento{Plantilla}
+% Fecha de creación del documento
+\FechaDoc{29/01/2020}
+% Cambios del documento
+\VersionA{}\FechaA{}\CambioA{}
+\VersionB{}\FechaB{}\CambioB{}
+\VersionC{}\FechaC{}\CambioC{}
+\VersionD{}\FechaD{}\CambioD{}
+\VersionE{}\FechaE{}\CambioE{}
+\VersionF{}\FechaF{}\CambioF{}
+\VersionG{}\FechaG{}\CambioG{}
+% Documentos de referencia
+\CodReferenciaA{124231}\TituloReferenciaA{afgsdfgsdf}
+\CodReferenciaB{134}\TituloReferenciaB{sdgsgdf}
+\CodReferenciaC{}\TituloReferenciaC{}
+\CodReferenciaD{}\TituloReferenciaD{}
+\CodReferenciaE{}\TituloReferenciaE{}
+\CodReferenciaF{}\TituloReferenciaF{}
+% Documentos aplicables
+\CodAplicableA{23143}\TituloAplicableA{afsgfd}
+\CodAplicableB{3214234}\TituloAplicableB{4315 325sfgsfdg}
+\CodAplicableC{}\TituloAplicableC{}
+\CodAplicableD{}\TituloAplicableD{}
+\CodAplicableE{}\TituloAplicableE{}
+\CodAplicableF{}\TituloAplicableF{}
+
+
+
+\begin{document}
+
+%------------------------------------------------------
+\section{Sobre el documento}
+%------------------------------------------------------
+
+\subsection{Objetivos}
+El presente documento tiene como objetivo informar las metodologías a utilizar para la
+creación y codificación de documentación resultante de las actividades del personal de
+la \gls{gvt}.
+
+\subsection{Alcance}
+Está destinado a todo el personal de la \gls{gvt}.
+
+% Subsección de acrónimos
+\printglossary[type=\acronymtype, numberedsection, title=Lista de acrónimos y abreviaturas]
+
+%------------------------------------------------------
+\section{Utilización de los acrónimos}
+%------------------------------------------------------
+
+Cuando utilizo un acrónimo por primera vez en el texto, aparece de la siguiente manera: \gls{conae}.
+
+Cuando utilizo un acrónimo por segunda vez o más, aparece de la siguiente manera: \gls{conae}.
+
+NOTA: sólo aparecen en la lista de acrónimos aquellos que se usan en el texto.
+
+
+%------------------------------------------------------
+\section{Ejemplo de inclusión de imágenes}
+%------------------------------------------------------
+
+%\imagen{escala_respecto_al_texto}{directorio_imagen}{pie_de_figura}{etiqueta_para_referencias}
+\imagen{0.5}{logos/CONAE_logo_transp.png}{logo CONAE}{conaelog}
+
+%%% Ejemplo: referencia a figuras % \ref{etiqueta_para_referencias} la etiqueta par referencias
+%%% se define cuando se agrega la imagen en el texto
+En el texto se quiere hacer referencia a la figura \ref{conaelog}, correspondiente al logo de
+CONAE\\
+
+%------------------------------------------------------
+\section{Ejemplo de inclusión de subfiguras}
+%------------------------------------------------------
+
+% \addImage{escala_respecto_al_texto}{directorio_imagen}{pie_de_subfigura}{etiqueta_para_referencias}
+
+\begin{imagenmultiple}{Este es un pie de figura. (a) Subfig a; (b) Subfig b; (c) Subfig c; (d) Subfig d.}{labelmultiple}
+    \addImage{0.25}{logos/CONAE_logo_transp.png}{pie de subfigura}{}
+    \addImage{0.25}{logos/CONAE_logo_transp.png}{}{label_subfigb} \\ % Salto de línea
+    \addImage{0.25}{logos/CONAE_logo_transp.png}{}{}
+    \addImage{0.25}{logos/CONAE_logo_transp.png}{}{}
+\end{imagenmultiple}
+
+En el texto se quiere hacer referencia a la figura \ref{labelmultiple} y a la subfigura \ref{label_subfigb}.
+
+%------------------------------------------------------
+\section{Ejemplo de inclusión de imagen descriptiva}
+%------------------------------------------------------
+
+Para referenciar la figura descriptiva se hace así: Figura \ref{fig:descriptiva}.
+
+\imagenDescriptiva{0.5} % Escala de la imagen respecto al ancho del texto
+{logos/CONAE_logo_transp.png} % Ruta a la imagen
+{Este es un pie de la figura.} % Pie de figura
+{fig:descriptiva} % Label de figura
+{0.5} % Escala de la descripción
+{Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura. Esta es una descripción de la figura.} % Descripción
+
+
+%------------------------------------------------------
+\section{Ejemplo de utilización de distintos tipos de tablas}
+%------------------------------------------------------
+
+\begin{alternateColorTab}{ccccccc}{Esta es una tabla con colores de filas alternado.}{tab:alternada}
+        \hline
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        \hline
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        \hline
+\end{alternateColorTab}
+
+
+
+\begin{table}[H]
+    \centering
+    \caption{Esta es una tabla común con líneas de encabezado y columna.}
+    \label{tab:my_label}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \toprule
+         1 & 2 & 3 & 4 & 5 & 6 & 7\\
+         \midrule
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+% Definición de algunos colores personalizados para las celdas de la tabla
+\definecolor{MiColor1}{rgb}{0.1,0.3,0.6}
+\definecolor{MiColor2}{rgb}{0.7,0.1,0.7}
+\definecolor{MiColor3}{rgb}{0.1,0.9,0.2}
+
+\begin{table}[H]
+    \centering
+    \caption{Esta es una tabla con filas pintadas de forma personalizada.}
+    \label{tab:my_label2}
+    \begin{tabular}{ccccccc}
+        \hline
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        \hline
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        \rowcolor{MiColor1}
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        \rowcolor{MiColor2}
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        \rowcolor{MiColor3}
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        \rowcolor{MiColor3}
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        \rowcolor{MiColor3}
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \caption{Esta es una tabla con "multifilas" y "multicolumnas".}
+    \label{tab:my_label3}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+         \multirow{2}{*}{Primera multifila} & xxx & yyy & zzz \\ \cline{2-4}
+                                            & xxx & yyy & zzz \\
+        \hline
+        \multirow{3}{*}{Segunda multifila} & xxx & yyy & zzz \\ \cline{2-4}
+                                           & xxx & yyy & zzz \\ \cline{2-4}
+                                           & xxx & yyy & zzz \\
+        \hline
+                                     aaaa  & bbb & \multicolumn{2}{c|}{Multicolumna} \\
+        \hline
+                                     aaaa  & bbb & ccc & ddd \\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+
+%------------------------------------------------------
+\section{Utilización de referencias}
+%------------------------------------------------------
+
+\subsection{Referencias a bibliografía (papers, libros, etc)}
+
+Una referencia a un paper es \cite{Jablonski2016}, mientras que una referencia a un libro es \cite{ModernOpticalEngineering}.
+
+\subsection{Referencias a documentos internos aplicables o de referencia}
+
+Esta es una referencia a un documento de referencia \docref{DR1} interno agregado a la tabla de la segunda página, mientras que esta es una referencia a un documento aplicable \docref{DA1}.
+
+
+%*************************************************************************************
+%% Referencias -- Si no hay referencias, comentar las siguientes líneas
+%*************************************************************************************
+\addcontentsline{toc}{section}{Referencias} % Agrego la sección referencias al índice
+\bibliographystyle{ieeetr}  % Formato de las referencias: IEEE
+\bibliography{referencias}  % Nombre del archivo con la bibliografía
+
+
+%*************************************************************************************
+% A partir de la siguiente línea todas las secciones que se coloquen serán anexos
+%*************************************************************************************
+\newpage % Salto de página
+\appendix
+%********************
+\section{Esto es un anexo}
+
+Contenido del anexo
+
+\section{Esto es otro anexo}
+
+\subsection{Esta es una subsección dentro del anexo}
+
+\subsubsection{Esto es una subsubsección dentro del anexo}
+
+
+
+%**************************************************************************************
+\end{document} % Final del documento

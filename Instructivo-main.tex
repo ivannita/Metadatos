@@ -1,0 +1,131 @@
+\documentclass{GVT_CONAE_Class}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DATOS DEL DOCUMENTO A COMPLETAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Nombre del proyecto
+\Proyecto{Nombre del proyecto}
+% Título del documento
+\TituloDoc{Título del documento}
+% Código del documento
+\CodigoDoc{GVT-AAA-PRO-DO-NUM}
+% Versión del documento
+\VersionDoc{v01}
+% Autores y posición de cada uno
+\AutorA{Autor 1}\PosicionAutorA{Vinculación autor 1}
+\AutorB{Autor 2}\PosicionAutorB{Vinculación autor 2}
+\AutorC{}\PosicionAutorC{}
+\AutorD{}\PosicionAutorD{}
+% Revisores del documento, posición y fecha de revisión
+\RevisorA{}\PosicionRevisorA{}\FechaRevisorA{}
+\RevisorB{}\PosicionRevisorB{}\FechaRevisorB{}
+\RevisorC{}\PosicionRevisorC{}\FechaRevisorC{}
+\RevisorD{}\PosicionRevisorD{}\FechaRevisorD{}
+% Aprobadores del documento, posición y fecha de aprobación
+\AprobadorA{}\PosicionAprobadorA{}\FechaAprobadorA{}
+\AprobadorB{}\PosicionAprobadorB{}\FechaAprobadorB{}
+\AprobadorC{}\PosicionAprobadorC{}\FechaAprobadorC{}
+\AprobadorD{}\PosicionAprobadorD{}\FechaAprobadorD{}
+% Tipo de documento
+\TipoDocumento{Instructivo}
+% Fecha de creación del documento
+\FechaDoc{ColoqueFecha}
+% Cambios del documento
+\VersionA{}\FechaA{}\CambioA{}
+\VersionB{}\FechaB{}\CambioB{}
+\VersionC{}\FechaC{}\CambioC{}
+\VersionD{}\FechaD{}\CambioD{}
+\VersionE{}\FechaE{}\CambioE{}
+\VersionF{}\FechaF{}\CambioF{}
+\VersionG{}\FechaG{}\CambioG{}
+% Documentos de referencia
+\CodReferenciaA{}\TituloReferenciaA{}
+\CodReferenciaB{}\TituloReferenciaB{}
+\CodReferenciaC{}\TituloReferenciaC{}
+\CodReferenciaD{}\TituloReferenciaD{}
+\CodReferenciaE{}\TituloReferenciaE{}
+\CodReferenciaF{}\TituloReferenciaF{}
+% Documentos aplicables
+\CodAplicableA{}\TituloAplicableA{}
+\CodAplicableB{}\TituloAplicableB{}
+\CodAplicableC{}\TituloAplicableC{}
+\CodAplicableD{}\TituloAplicableD{}
+\CodAplicableE{}\TituloAplicableE{}
+\CodAplicableF{}\TituloAplicableF{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Secciones obligatorias en todos los documentos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------
+\section{Sobre el documento}
+%----------------------------------------------------------------------------
+
+    \subsection{Objetivos}
+    El presente documento ...
+
+    \subsection{Alcance}
+    Está destinado a todo ...
+    
+    % Subsección de acrónimos
+    \printglossary[type=\acronymtype, numberedsection, title=Lista de acrónimos y abreviaturas]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fin de secciones obligatorias
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------
+\section{Introducción}
+%----------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------
+\section{Descripción general}
+%----------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------
+\section{Caso de aplicación 1}
+%----------------------------------------------------------------------------
+
+    \subsection{Descripción del caso}
+    
+    \subsection{Paso 1}
+        
+    \subsection{Paso 2}
+    
+    \subsection{...}
+
+
+
+%----------------------------------------------------------------------------
+\section{Caso de aplicación 2}
+%----------------------------------------------------------------------------
+
+    \subsection{Descripción del caso}
+    
+    \subsection{Paso 1}
+        
+    \subsection{Paso 2}
+    
+    \subsection{...}
+
+
+
+
+%*************************************************************************************
+%% Referencias -- Si no hay referencias, comentar las siguientes líneas
+%*************************************************************************************
+\addcontentsline{toc}{section}{Referencias} % Agrego la sección referencias al índice
+\bibliographystyle{ieeetr}  % Formato de las referencias: IEEE
+\bibliography{referencias}  % Archivo con la bibliografía
+
+
+%*************************************************************************************
+% A partir de la siguiente línea todas las secciones que se coloquen serán anexos
+%*************************************************************************************
+\newpage % Salto de página
+\appendix
+%********************
+
+\end{document}
